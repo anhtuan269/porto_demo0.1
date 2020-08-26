@@ -4,10 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" type="text/css">
+    <!--font-google-->
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <!--font-google-->
+
+    <!-- slide_w3school-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <!-- slide_w3school-->
+     <!-- font awesome-->
      <script src="https://kit.fontawesome.com/b1ff58fb64.js" crossorigin="anonymous"></script>
+     <!-- font awesome-->
+
     <title>Demo1</title>
 </head>
 <body>
-    
+    <!--header-->
+    <div class="header">
+        <h5>Get 10% extra OFF on Porto Summer Sale - Use <b>PORTOSUMMER</b> coupon - <a href="#"><b>Shop Now!</b></a> </h5>
+        <a href="#"><i class="fas fa-times fa-2x"></i></a>
+    </div>
+    <!--End header-->
+
+    <!--slice and nav menu-->
+    <div class="container">
+        <div class="slide">
+            <div class="mySlides">
+                <img  src="./image/slide1.jpg" alt="Porto" style="height: 40em  width: 100%">
+                <div class="content slide1">
+                    <span><h2>Winter Fashion Trends</h2></span> 
+                    <span><h3>GET UP TO 30% OFF</h3></span>  
+                    <span><h4>on Jackets</h4></span>  
+                    <span><h5>STARTING AT <span><sub>$</sub>199<sub>99</sub></span></h5></span>  
+                    <button class="slide1-button">SHOP NOW</button>
+                </div>
+            </div>
+            <div class="mySlides">
+                <img src="./image/slide2.jpg" alt="Porto" style="height: 40em  width: 100%">
+                <div class="content slide2">
+                    <span><h1>New Seasion Hats</h1></span> 
+                    <span><h2><span class="rotate">UP TO</span><span class="off">20% OFF</span> </h2></span>  
+                    <span><h3>___</h3></span>  
+                    <span><h4>STARTING AT <sup>$</sup><span>19</span><sup>99</sup></h4></span>  
+                    <button class="slide2-button">SHOP NOW <i class="fas fa-arrow-right"></i> </button>
+                </div>
+            </div>
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button  w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <div class="logo">
+           <a href="#"><img src="./image/logo.png" alt=""></a> 
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CATEGORIES <i class="fas fa-angle-down"></i></a></li>
+                    <li><a href="#">PRODUCT <i class="fas fa-angle-down"></i></a></li>
+                    <li><a href="#">PAGE <i class="fas fa-angle-down"></i></a></li>
+                    <li><a href="#">BUY PORTO!</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="icon">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i><i class="fas fa-angle-down"></i></a>
+
+        </div>
+
+    </div>
+    <!--END slice and nav menu-->
+
+
+    <!--javascrip for slides-->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+        <!--end java for slide-->
 </body>
 </html>

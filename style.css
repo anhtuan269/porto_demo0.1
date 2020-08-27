@@ -31,11 +31,32 @@ div:hover .slide .w3-button{ display: block;}
 .mySlides .slide2 span h4 span{ font-size:2em;}
 .mySlides .slide2 .slide2-button { background-color:#000;color:#FFF;padding: 20px 30px;position:relative; font-weight:700;left:280px; top:-125px; }
 .logo { position: absolute; top: 40px; left: 70px}
-.menu { position: absolute; top: 50px; left: 250px; }
-.menu nav ul li { list-style-type: none; float: left; color: #000; font-size: 0.9em; font-weight:600;}
-.menu nav ul li a { text-decoration: none; display: block; padding:0 10px; }
 .icon { position: absolute; right:50px; top:30px;}
 .icon a {color: #000; font-size:x-large; padding: 0 15px;}
+.menu { position: absolute; top: 50px; left: 250px; }
+
+.menu nav ul li { list-style-type: none; float: left; color: #000; font-size: 0.9em; font-weight:600;}
+.menu nav ul li a { text-decoration: none; display: block; padding:0 10px; }
+.submenu{ background-color:#FFF; position:absolute; width:600px; display: none;}
+.submenu img{ width:190px; height:260px; float: right; background-size: cover;}
+.has-submenu:hover .submenu {  display: inline-block;}
+.has-submenu .submenu tr  { text-align:left;  }
+.has-submenu .submenu tr th { position: relative; left: 20px;}
+.has-submenu .submenu tr td { text-align: left;position: relative; left:10px; padding-top:6px;}
+.submenu1 { width:690px; font-size: 12px; margin:10px; padding: 10px; }
+.submenu1 img { height: 200px;}
+.submenu1 .submenu tr td { padding: 1.3em; margin: 1em 0;}
+.has-submenu .submenu2  { width: 180px; margin:0;padding:0;}
+.has-submenu .submenu2  tr td .fas { position:absolute; right:5px;}
+.has-submenu .submenu2 tr:hover  td { background-color: #000; color: #fff; transform: all 1.5s;}
+.has-submenu1 .submenu21 table { position: absolute; right: -175px; top: -10px; background-color:#FFF; color:#000;}
+.submenu21 {display: none; }
+.has-submenu td.has-submenu1 .submenu21 tr td {background-color:#FFF; color:#000;}
+.has-submenu1:hover .submenu21{ display: block; background-color:#FFF;}
+.has-submenu td.has-submenu1 .submenu21 tr:hover td {background-color:#000; color:#FFF;}
+.submenu22 table {position: absolute; left:160px;}
+.has-submenu td.has-submenu1 .submenu22 tr:hover td {background-color:#000; color:#FFF;}
+
 
 
 

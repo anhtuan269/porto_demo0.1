@@ -8,7 +8,6 @@ body{ font-family: 'Open Sans',sans-serif; font-size: 14px; color: #AAA; backgro
 
 .container { position: relative;}
 .mySlides { display: none; }
-.mySlides img { position:relative; right: 150px;}
 .slide .w3-button { display: none;}
 div:hover .slide .w3-button{ display: block;}
 .mySlides .slide1 { position: absolute; top:270px; left: 260px;}
@@ -57,6 +56,71 @@ div:hover .slide .w3-button{ display: block;}
 .submenu22 table {position: absolute; left:160px;}
 .has-submenu td.has-submenu1 .submenu22 tr:hover td {background-color:#000; color:#FFF;}
 
+.product span { position: relative; left: 5px; }
+.category span h2 { text-align: center; color: #000; font-size:1em; font-weight: 700; margin-top: 50px; margin-bottom:0px;}
+
+.product span h3 { color: #000; font-size:1.3em;}
+.product span p { position: relative;font-size: 0.9em; top:-1em;}
+.fashion span h3{position: relative; left: 15px; }
+
+.slides {display: flex;text-align: center; justify-content: center; align-items: center; }
+.slides  li { list-style-type: none; width: 220px; height: 260px; background-color:#FFF; margin-top:20px; margin:20px 5px;}
+.slides li img {height: 200px;width:220px;position:relative;} 
+.slides li a {text-decoration: none;}
+.slides li a .product .img {background-color:#FFF;}
+.slides li a .product:hover img {}
+.slide-left { position: relative; top:-170px; left: 10px;}
+.slide-right { position: relative; top:-180px; left: 1620px;}
+ 
+.shop-product ul { display: flex; text-align: center; justify-content:center; align-items:center; background-color:#ddd; margin-top:40px;}  
+.shop-product ul li { width: 22%; height:500px; list-style: none; margin: 60px 10px; background-color: #FFF; position: relative;  }
+.shop-product ul .glass-product {background-image: url(./image/home-banner1.jpg); background-size: cover; }
+.shop-product ul .glass-product:hover  {opacity:0.7;} 
+.shop-product ul .glass-product .sunglass span h3 { color:#000; font-weight: 700; position: relative; top: 350px;left: -50px;}
+.shop-product ul .glass-product .sunglass span p { position: relative; top: 340px;left: -75px;}
+.shop-product ul .glass-product .sunglass button {  position: relative; top: 350px;left: -73px; background-color:#000; }
+.shop-product ul .glass-product .sunglass button a { color:#FFF;; font-weight: 700; padding:10px 20px;display: block; font-size: 0.7em; text-decoration: none;}
+.shop-product ul .trend-product { background-image: url(./image/home-banner2.jpg); background-size: cover;}
+.shop-product ul .trend-product .cosmetic { position: relative; top: 70px;}
+.shop-product ul .trend-product:hover { opacity:0.8;}
+.shop-product ul .trend-product .cosmetic span h3 { color:#000; font-weight:700;}
+.shop-product ul .trend-product .cosmetic span p { position: relative; top:-15px;}
+.shop-product ul .trend-product .cosmetic button { background-color:#000;}
+.shop-product ul .trend-product .cosmetic button a { color:#FFF;; font-weight: 700; padding:10px 35px;display: block; font-size: 0.7em; text-decoration: none;}
+.shop-product ul .fashion-product:hover {opacity: 0.7;}
+.shop-product ul .fashion-product { background-image: url(./image/home-banner3.jpg); background-size: cover;}
+.shop-product ul .fashion-product .fashions  { position: relative; top: 200px;}
+.shop-product ul .fashion-product .fashions span h3 { color:#FFF; font-size:1.4em; font-weight:700;}
+.shop-product ul .fashion-product .fashions span p { position: relative; top:-15px;}
+.shop-product ul .fashion-product .fashions button { background-color:#FFF;}
+.shop-product ul .fashion-product .fashions button a { text-decoration: none; padding: 8px 15px;font-size:0.8em;display: block; font-weight:700;}
+.shop-product ul .bag-product { background-image: url(./image/home-banner4.jpg); background-size: cover;}
+.shop-product ul .bag-product:hover { opacity:0.8;}
+.shop-product ul .bag-product .bagss { position:relative; top: 320px;left:35px;}
+.shop-product ul .bag-product .bagss .up-to { border: 4px solid #000; width:300px; height:130px;}
+.shop-product ul .bag-product .bagss .up-to span h3 { font-size:1.2em;color:#000;font-weight:700; padding-top:20px;}
+.shop-product ul .bag-product .bagss .up-to span p {position:relative; top:-10px;color:#888}
+.shop-product ul .bag-product .bagss button{ background-color:#000; position: relative; top:5px;}
+.shop-product ul .bag-product .bagss button a {color:#FFF;text-decoration:none;display:block;font-size:0.8em; padding:20px 60px; position:relative; }
+
+.featured ul { display: flex; margin-left: 60px;margin-top: 30px;  margin-bottom:30px; }
+.featured h2 { color:#000; font-size:1.3em;font-weight:700;text-align:center;}
+.featured-product li { width: 15%; height: 320px; background-color: #FFF;margin: 0 10px; list-style:none;position: relative;}
+.feature img { width: 100%; height:210px;}
+.featured .featured-product .feature:hover .cart{ display: inline-block;}
+.featured .featured-product .feature:hover a {display:block;}
+.featured .featured-product .feature a { text-decoration: none;}
+.featured .featured-product .feature .line-through { text-decoration: line-through; font-size: 1em; padding-right:10px;}
+.featured .featured-product .feature .bold { color:#000; font-weight:700;font-size:1.3em;} 
+.featured .featured-product .feature .price { position: absolute; bottom:0;}
+.featured .featured-product .feature span h3 { font-size:0.7em;}
+.featured .featured-product .feature span h4 { font-size:0.9em; color:#222;}
+.featured .featured-product .feature span p { font-size:0.9em; background-color:#e27c7c; color:#FFF;display: inline-block;position: absolute;top:5px; left:5px;padding:0 5px;}
+.featured .featured-product .feature .green p {background-color:#62b959;}
+.featured .featured-product .feature .option p{ position: absolute; top: 30px; display: inline-block; left:7px; }
+.featured .featured-product .feature span .cart { position: absolute;top:20px; right:20px; border: 1px solid #000;border-radius:50%; padding:5px;background-color:#000;color:#FFF; display: none;}
+.featured .featured-product .feature span .cart:hover { color:#000; background-color:#FFF;}
+.featured .featured-product .feature button a{padding:14px 79px;;position:absolute; top:166px;left:0px;font-size:0.9em; background-color:#000; color:#FFF;display:none;}
 
 
 

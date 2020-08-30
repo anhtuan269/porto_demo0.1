@@ -121,10 +121,17 @@ div:hover .slide .w3-button{ display: block;}
 .featured .featured-product .feature span .cart:hover { color:#000; background-color:#FFF;}
 .featured .featured-product .feature button a{padding:14px 79px;;position:absolute; top:166px;left:0px;font-size:0.9em; background-color:#000; color:#FFF;opacity:0.3; display:none;}
 
-.servise { margin: 30px 70px; border-top: 1px solid #AAA; text-align: center;}
+.servise { margin: 30px 70px; border-top: 1px solid #AAA; text-align: center; border-bottom:1px solid #AAA; height: 300px;}
 .custumer {  padding-top: 40px; float: left; width:23%; text-align:center; margin: 0 15px;}
 .custumer .fas { color:#000; }
 .custumer .far { color:#000;}
 .custumer span h2 { color:#000; font-size:1em; font-weight:700; position: relative; top: 10px;}
 .custumer span h4 { font-size:1em; color:#888;}
 
+.subcribe {  margin:0 70px; display:flex; border-bottom: 1px solid #AAA;height: 100px;}
+.subcribe .sub-content span h3 { font-size: 1em; color:#000;font-weight: 700;}
+.subcribe .sub-content span p { position:relative; top:-10px;display:block; font-size:0.8em;}
+.subcribe .input input { height:40px; width: 300px; position: relative; left: 30px;top:10px;}
+.subcribe .input button a { text-decoration: none; padding:13px 20px;display:block; background-color:#000; color:#fff; font-weight:700;font-size:0.7em;}
+.subcribe .input button {position: relative; left:22px;top:8px;}
+.subcribe .input button:hover {opacity:0.8;}

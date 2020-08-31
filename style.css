@@ -18,7 +18,7 @@ div:hover .slide .w3-button{ display: block;}
 .mySlides .slide1 span h5 {text-transform: uppercase; color: #000}
 .mySlides .slide1 span h5 span { padding: 8px 4px; box-sizing: border-box; background-color:#FFF;font-size:2em;font-weight:700;}
 .mySlides .slide1 span h5 span sub {  bottom:0.2em; }
-.slide1-button { padding:20px 30px; background-color:#000; color:#FFF; font-weight:700px; font-size:1.3em; line-height: 1; margin-top: 2em;}
+.mySlides .slide1 a { text-decoration:none;padding:20px 30px; background-color:#000; color:#FFF; font-weight:700px; font-size:1.3em; line-height: 1; margin-top: 2em;}
 
 .mySlides .slide2 span h1{font-size:3em; color:#000; font-weight: 700;}
 .mySlides .slide2 span h2 {position: relative; top: -50px;}
@@ -28,7 +28,7 @@ div:hover .slide .w3-button{ display: block;}
 .mySlides .slide2 span h4 { color: #000;font-size:1.5em; font-weight:700;position: relative; top:-50px;}
 .mySlides .slide2 span h4 sup { position:relative;top: -15px; font-size:1em; }
 .mySlides .slide2 span h4 span{ font-size:2em;}
-.mySlides .slide2 .slide2-button { background-color:#000;color:#FFF;padding: 20px 30px;position:relative; font-weight:700;left:280px; top:-125px; }
+.mySlides .slide2 a { text-decoration:none; background-color:#000;color:#FFF;padding: 20px 30px;position:relative; font-weight:700;left:280px; top:-125px; }
 .logo { position: absolute; top: 40px; left: 70px}
 .icon { position: absolute; right:50px; top:30px;}
 .icon a {color: #000; font-size:x-large; padding: 0 15px;}
@@ -58,23 +58,24 @@ div:hover .slide .w3-button{ display: block;}
 
 .product span { position: relative; left: 5px; }
 .category span h2 { text-align: center; color: #000; font-size:1em; font-weight: 700; margin-top: 50px; margin-bottom:0px;}
-
-.product span h3 { color: #000; font-size:1.3em;}
+.product span h3 { color: #000;font-size:1.3em;}
 .product span p { position: relative;font-size: 0.9em; top:-1em;}
-.fashion span h3{position: relative; left: 15px; }
-
-.slides {display: flex;text-align: center; justify-content: center; align-items: center; }
+.fashion span h3{position: relative; left: 15px;}
+.slides {display: flex;text-align: center; justify-content: center; align-items: center;}
 .slides  li { list-style-type: none; width: 220px; height: 260px; background-color:#FFF; margin-top:20px; margin:20px 5px;}
 .slides li img {height: 200px;width:220px;position:relative;} 
 .slides li a {text-decoration: none;}
 .slides li a .product .img {background-color:#FFF;}
-.slide-left { position: relative; top:-170px; left: 10px;}
-.slide-right { position: relative; top:-180px; left: 1620px;}
+.slide-left { position: relative; top:-170px; left: 10px;display:inline-block;}
+.slide-right { position: relative; top:-180px; left: 1620px; display:inline-block;}
+.category .button-slide { background-color:#FFF; display:none;}
+.category .button-slide:hover { background-color:#000; color:#FFF;}
+.category:hover .button-slide { display: inline-block;}
  
 .shop-product ul { display: flex; text-align: center; justify-content:center; align-items:center; background-color:#ddd; margin-top:40px;}  
 .shop-product ul li { width: 22%; height:500px; list-style: none; margin: 60px 10px; background-color: #FFF; position: relative;  }
 .shop-product ul .glass-product {background-image: url(./image/home-banner1.jpg); background-size: cover; }
-.shop-product ul .glass-product:hover  {opacity:0.7;} 
+.shop-product ul .glass-product:hover  {opacity:0.9;} 
 .shop-product ul .glass-product .sunglass span h3 { color:#000; font-weight: 700; position: relative; top: 350px;left: -50px;}
 .shop-product ul .glass-product .sunglass span p { position: relative; top: 340px;left: -75px;}
 .shop-product ul .glass-product .sunglass button {  position: relative; top: 350px;left: -73px; background-color:#000; }
@@ -102,6 +103,7 @@ div:hover .slide .w3-button{ display: block;}
 .shop-product ul .bag-product .bagss button{ background-color:#000; position: relative; top:5px;}
 .shop-product ul .bag-product .bagss button a {color:#FFF;text-decoration:none;display:block;font-size:0.8em; padding:20px 60px; position:relative; }
 
+
 .featured ul { display: flex; margin-left: 60px;margin-top: 30px;  margin-bottom:30px; }
 .featured h2 { color:#000; font-size:1.3em;font-weight:700;text-align:center;}
 .featured-product li { width: 15%; height: 320px; background-color: #FFF;margin: 0 10px; list-style:none;position: relative;}
@@ -128,10 +130,27 @@ div:hover .slide .w3-button{ display: block;}
 .custumer span h2 { color:#000; font-size:1em; font-weight:700; position: relative; top: 10px;}
 .custumer span h4 { font-size:1em; color:#888;}
 
-.subcribe {  margin:0 70px; display:flex; border-bottom: 1px solid #AAA;height: 100px;}
+.subcribe {  margin:0 70px; display:flex; border-bottom: 1px solid #AAA;padding-bottom:30px;}
 .subcribe .sub-content span h3 { font-size: 1em; color:#000;font-weight: 700;}
 .subcribe .sub-content span p { position:relative; top:-10px;display:block; font-size:0.8em;}
 .subcribe .input input { height:40px; width: 300px; position: relative; left: 30px;top:10px;}
-.subcribe .input button a { text-decoration: none; padding:13px 20px;display:block; background-color:#000; color:#fff; font-weight:700;font-size:0.7em;}
-.subcribe .input button {position: relative; left:22px;top:8px;}
-.subcribe .input button:hover {opacity:0.8;}
+.subcribe .input a { text-decoration: none; background-color:#000;position:relative;top:10px; right:-25px;display:inline-block;padding:11px 20px;font-size:0.8em;font-weight:700;color:#FFF;}
+
+.subcribe .input a:hover {opacity:0.8;}
+.contact {display: flex;margin: 30px 70px;border-bottom: 1px solid #AAA; padding-bottom: 20px; }
+.contact .info span h4 {font-size:1.1em;color:#000; font-weight:700; }
+.contact .info span h5 {font-size: 0.8em; color:#000;}
+.contact .info span p {font-size: 0.8em; position: relative; top:-10px;}
+.contact .email { position:relative; top:30px;margin: 0 50px;}
+.contact .email span h5 { font-size: 0.8em; color:#000;}
+.contact .email span p{font-size: 0.8em; position: relative; top:-10px;}
+.contact .account { margin-right:200px;position: relative;}
+.contact .account span h2 {font-size:1.1em;color:#000; font-weight:700;}
+.contact .account  ul tr td {padding-right:80px;font-size: 0.8em; }
+.contact .main span h2 { font-size:1.1em;color:#000; font-weight:700;margin-left:40px;}
+.contact .main  ul tr td {padding-right:80px;font-size: 0.8em; }
+
+.porto {margin-left:70px;margin-bottom:30px; position: relative;}
+.porto span p {font-size:0.8em;}
+.porto .cart { position: absolute;right:70px;display:inline-block; bottom:-15px; color:#000; }
+.porto .cart i { padding: 0 5px;}
